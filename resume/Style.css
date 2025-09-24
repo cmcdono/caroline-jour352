@@ -3,7 +3,7 @@
 /*Job titles styling*/
 .job-title {
     font-weight:600;
-    font-size:1.5em
+    font-size:1.5em 
 }
 /* Job organization styling*/
 .job-organization {
@@ -14,10 +14,17 @@
 /* Job dates styling*/
 .job-dates {
     font-weight: 400; 
-    font-size: 1.5em; 
-
+    font-style: italic; 
+    font-size: 1em; 
 }
-
+/*Contact infor list items*/
+.contact-info li{
+    font-size: 1em; 
+}
+/*Education list items*/
+.education lis {
+    font-size: 1em; 
+}
 BODY {
 font-family: 'Open Sans', arial, sans-serif;
 font-size: 1em;
