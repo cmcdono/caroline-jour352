@@ -30,13 +30,23 @@ font-family: 'Open Sans', arial, sans-serif;
 font-size: 1em;
 color:#444;
 font-weight: 400;
+margin:0 auto; 
 } 
 
-h1 {
+#container {
+    width: 100%; 
+    max-width: 1200px; 
+    margin:0 auto; 
+}
+
+#name {
     font-size: 3em; 
     text-transform:uppercase; 
     text-align:center;
     color:#33485e;
+    border-bottom: 1px solid #33485e;
+    width:60%; 
+    min-width: 300px; 
 }
 
 strong {
@@ -45,9 +55,15 @@ strong {
     font-size:1.5em;
 }
 
-h2 {
+.sectionheader {
     font-size:1.5em; 
     text-transform:uppercase;
     background-color:#33485e;
     color:#fff;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    margin-right: 0px;
+    margin-left: 0px; 
+    width: 70%; 
+    min-width: 300px; 
 }
