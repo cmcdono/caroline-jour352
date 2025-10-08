@@ -1,0 +1,33 @@
+.skateboardimage {
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.skateboarding { 
+        width: 100%; 
+        max-width: 500px; 
+
+}
+
+h1, h2, h3, .navbar-brand, .btn {
+font-family: "Special Elite", system-ui;
+}
+
+.bi { 
+    font-size: 3em;
+}
+
+.row { 
+    padding-bottom: 50px; 
+}
+@media only screen and (max-width: 500px) {
+    h2 {
+    padding-top: 50px; 
+}
+
+.btn { 
+    background-color: teal; 
+    border-color: teal; 
+}
+
+}
