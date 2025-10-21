@@ -42,11 +42,10 @@ body {
 
 /* Container styles */
 .container {
-    max-width: 800px;
     margin: 40px auto;
     background: white;
     padding: 40px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: none; 
 }
 
 /* Headline styles */
