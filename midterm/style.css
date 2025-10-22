@@ -57,6 +57,15 @@ body {
     font-weight: bold;
 }
 
+/* Deck/subheading styling */
+.deck {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
 /* Byline styling */
 #byline {
     font-size: 13px;
