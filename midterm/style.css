@@ -1,0 +1,145 @@
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Page wrapper - centers content */
+#page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner/Masthead styling */
+#banner {
+    background-color: #1a472a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #d4af37;
+}
+
+#banner h1 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+#banner p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d4af37;
+}
+
+/* Main headline styling */
+.main-headline {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Byline styling */
+#byline {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#byline p {
+    margin: 0;
+}
+
+/* Subheading styling */
+h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #1a472a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph text styling */
+p {
+    margin-bottom: 18px;
+}
+
+/* Image styling */
+figure {
+    margin: 30px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lead-image {
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+    margin-top: 8px;
+    padding: 5px 0;
+}
+
+/* Blockquote/Pullquote styling */
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #1a472a;
+    font-style: italic;
+    margin: 35px 0;
+    padding: 25px 40px;
+    border-left: 5px solid #d4af37;
+    background-color: #f9f9f9;
+}
+
+/* Related links styling */
+.related-links {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #1a472a;
+}
+
+.related-links li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.related-links a {
+    color: #1a472a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.related-links a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
