@@ -1,0 +1,251 @@
+/* CSS Variables for consistent theming */
+:root {
+    --primary-color: #2c5f7c;
+    --accent-color: #e8a87c;
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+    --bg-light: #f8f9fa;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Page Topper Styles */
+.page-topper {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a3d52 100%);
+    color: white;
+    padding: 4rem 0 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.page-topper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none; /* THIS IS THE FIX - prevents the overlay from blocking clicks */
+}
+
+.page-topper h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1; /* Ensures text is above the ::before element */
+}
+
+.page-topper .subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1; /* Ensures text is above the ::before element */
+}
+
+.contact-links {
+    position: relative;
+    z-index: 1; /* Ensures links are above the ::before element */
+}
+
+.contact-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 2; /* Extra z-index to ensure clickability */
+}
+
+.contact-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Section Header Styles */
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+}
+
+/* Experience Item Styles */
+.experience-item {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.job-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.organization {
+    font-weight: 600;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.date {
+    color: var(--accent-color);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.description {
+    color: var(--text-dark);
+}
+
+/* Skills Section Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: var(--bg-light);
+}
+
+/* Education Section Styles */
+.education-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.education-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.education-detail {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Leadership Section Styles */
+.leadership-list {
+    list-style: none;
+    padding: 0;
+}
+
+.leadership-list li {
+    background: white;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.8rem;
+    border-left: 3px solid var(--primary-color);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design - Mobile Styles */
+@media (max-width: 768px) {
+    .page-topper h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-topper .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .contact-links a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
