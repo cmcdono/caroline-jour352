@@ -1,0 +1,672 @@
+/* ===================================
+   TAYLOR SWIFT STORY - STYLES.CSS
+   External Stylesheet
+   =================================== */
+
+/* ===================================
+   CSS RESET & BASE STYLES
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* ===================================
+   TYPOGRAPHY
+   =================================== */
+.hero-title,
+.main-heading,
+.section-heading,
+.pull-quote,
+.closing-quote {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.lead-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #2d2d2d;
+    margin-bottom: 2rem;
+}
+
+.body-text {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.emphasis-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d2d2d;
+    line-height: 1.8;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+.navbar {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #6b1c7e !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #4a4a4a !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #6b1c7e !important;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, #6b1c7e 0%, #d946a6 50%, #dc2626 100%);
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-label {
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fbbf24;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #fbc2eb;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.byline-section {
+    background: white;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.article-byline {
+    font-size: 0.95rem;
+    color: #6b6b6b;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+/* ===================================
+   SECTION HEADINGS
+   =================================== */
+.main-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 3rem;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ===================================
+   PULL QUOTES
+   =================================== */
+.pull-quote-section {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.pull-quote-purple {
+    background: linear-gradient(135deg, #f3e7f7 0%, #fce7f3 100%);
+}
+
+.pull-quote-pink {
+    background: linear-gradient(135deg, #fce7f3 0%, #f3e7f7 100%);
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: #6b1c7e;
+    opacity: 0.2;
+    font-family: Georgia, serif;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.quote-icon-large {
+    font-size: 5rem;
+    color: #fbbf24;
+    opacity: 0.4;
+}
+
+.pull-quote {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #6b1c7e;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.quote-attribution {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+/* ===================================
+   IMAGE SECTIONS
+   =================================== */
+.image-section {
+    padding: 4rem 0;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.image-placeholder:hover {
+    transform: scale(1.02);
+}
+
+.image-purple {
+    background: linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%);
+}
+
+.image-pink {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.image-blue {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.image-red {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.placeholder-content {
+    text-align: center;
+}
+
+.placeholder-icon {
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.placeholder-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+}
+
+.placeholder-text {
+    font-size: 1rem;
+    color: #6b6b6b;
+}
+
+.image-caption {
+    font-size: 0.95rem;
+    color: #6b6b6b;
+    font-style: italic;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* ===================================
+   STATS SECTION
+   =================================== */
+.stats-section {
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.stat-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.stat-description {
+    font-size: 1rem;
+    color: #6b6b6b;
+    line-height: 1.5;
+}
+.stat-source {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* ===================================
+   INFOGRAPHIC CONTAINERS
+   =================================== */
+.infographic-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.infographic-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.infographic-placeholder {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.infographic-purple {
+    background: linear-gradient(135deg, #e9d5ff 0%, #fbcfe8 100%);
+}
+
+.infographic-pink {
+    background: linear-gradient(135deg, #fbcfe8 0%, #fef3c7 100%);
+}
+
+.infographic-blue {
+    background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+}
+
+/* ===================================
+   CLOSING SECTION
+   =================================== */
+
+
+.closing-section {
+    background: linear-gradient(135deg, #6b1c7e 0%, #d946a6 50%, #dc2626 100%);
+    padding: 5rem 0;
+    color: white;
+}
+
+.closing-quote {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+.closing-attribution {
+    font-size: 1.5rem;
+    color: #fbc2eb;
+    margin-bottom: 3rem;
+}
+
+.closing-divider {
+    width: 100px;
+    height: 2px;
+    background: #fbbf24;
+    margin: 2rem auto;
+}
+
+.closing-credit {
+    color: #e5e5e5;
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-credits {
+    color: #9ca3af;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.footer-copyright {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - TABLETS
+   =================================== */
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.25rem;
+    }
+    
+    .main-heading {
+        font-size: 2.75rem;
+    }
+    
+    .section-heading {
+        font-size: 2rem;
+    }
+    
+    .pull-quote {
+        font-size: 2rem;
+    }
+    
+    .closing-quote {
+        font-size: 2.5rem;
+    }
+    
+    .lead-text {
+        font-size: 1.35rem;
+    }
+    
+    .body-text {
+        font-size: 1.05rem;
+    }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE
+   =================================== */
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero-icon {
+        font-size: 3rem;
+    }
+    
+    .main-heading {
+        font-size: 2rem;
+    }
+    
+    .section-heading {
+        font-size: 1.75rem;
+    }
+    
+    .pull-quote {
+        font-size: 1.5rem;
+    }
+    
+    .quote-icon {
+        font-size: 3rem;
+    }
+    
+    .closing-quote {
+        font-size: 2rem;
+    }
+    
+    .lead-text {
+        font-size: 1.25rem;
+    }
+    
+    .body-text {
+        font-size: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-icon {
+        font-size: 2.5rem;
+    }
+    
+    .image-placeholder {
+        height: 350px;
+    }
+    
+    .infographic-placeholder {
+        height: 300px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .stat-card {
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .image-caption {
+        padding: 0 1rem;
+    }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - LARGE DESKTOP
+   =================================== */
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 3rem;
+    }
+    
+    .main-heading {
+        font-size: 4rem;
+    }
+    
+    .pull-quote {
+        font-size: 3rem;
+    }
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+.bg-light {
+    background-color: #f9fafb !important;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+/* ===================================
+   SMOOTH TRANSITIONS
+   =================================== */
+a, button, .stat-card, .image-placeholder, .nav-link {
+    transition: all 0.3s ease;
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+@media print {
+    .navbar,
+    .scroll-indicator,
+    .hero-icon {
+        display: none;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+}
